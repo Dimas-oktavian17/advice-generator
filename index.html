@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advice App Generator</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="public/src/style.css">
+</head>
+
+<body class="flex flex-col justify-center items-center w-auto h-screen bg-Dark-Blue">
+  <div class="container flex flex-col items-center justify-center">
+    <main class="max-w-xs lg:max-w-lg h-auto font-quote bg-Dark-Grayish-Blue rounded-2xl relative">
+      <div class="">
+        <h1 class="text-center font-normal  text-xs text-Neon-Green uppercase tracking-widest py-8"></h1>
+        <p class="font-extrabold  text-center text-Light-Cyan text-xl lg:text-3xl px-4 pb-4"></p>
+      </div>
+      <div class="flex flex-row justify-center items-center pb-16">
+        <img class="hidden lg:block mx-4" src="./images/dividerdekstop.svg" alt="divider">
+        <img class="block lg:hidden" src="./images/dividermobile.svg" alt="divider">
+      </div>
+      <button type="button"
+        class="hover:shadow-2xl hover:shadow-Neon-Green bg-Neon-Green px-4 py-4 rounded-full absolute left-[50%]  -translate-x-1/2 -translate-y-1/2 "><img
+          class="fill-Neon-Green" src="./images/dice.svg" alt="icon"></button>
+    </main>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
